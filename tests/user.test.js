@@ -4,7 +4,7 @@ const app=require('../src/app');
 
 const User=require('../src/models/user');
 
-const {userOneId,userOne,setUpDatabase}=require('./fixtures/db');
+// const {userOneId,userOne,setUpDatabase}=require('./fixtures/db');
 
 
 beforeEach(setUpDatabase);
