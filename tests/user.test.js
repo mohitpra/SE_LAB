@@ -13,7 +13,7 @@ test('Should signup a new user',async()=>{
 
   const response=await request(app).post('/users').send({
     name:'Mohit Singh',
-    email:'mohiit.singh600@gmail.com',
+    email:'mohit.singh600@gmail.com',
     password:'cod!',
   }).expect(201);
 
@@ -29,7 +29,7 @@ test('Should signup a new user',async()=>{
   expect(response.body).toMatchObject({
     user:{
       name:'Mohit Singh',
-      email:'mohiit.singh600@gmail.com',
+      email:'mohit.singh600@gmail.com',
     },
     token:user.tokens[0].token,
 
